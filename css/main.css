@@ -1,0 +1,127 @@
+/* Start Global Rules */
+:root {
+  --Violet-color: hsl(257, 40%, 49%);
+  --Soft-color: hsl(300, 69%, 71%);
+}
+* {
+  box-sizing: border-box;
+}
+
+/* End Global Rules */
+body {
+  background-image: url(../images/bg-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--Violet-color);
+  font-family: 'Poppins', sans-serif;
+}
+@media (max-width: 767px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--Violet-color);
+  }
+}
+.header {
+  position: absolute;
+}
+header .logo img {
+  margin: 20px;
+  width: 20%;
+}
+@media (max-width: 767px) {
+  header .logo img {
+    margin: 20px;
+    width: 30%;
+  }
+}
+.landing {
+  padding: 45px 25px;
+  position: relative;
+}
+.landing .container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  .landing .container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
+.landing img {
+  max-width: 100%;
+}
+.landing .text {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .landing .text {
+    text-align: start;
+  }
+}
+.landing h2 {
+  font-size: 35px;
+}
+.landing .button {
+  display: block;
+  margin: 30px;
+  text-decoration: none;
+  background-color: white;
+  color: var(--Violet-color);
+  padding: 10px 30px;
+  border-radius: 20px;
+  box-shadow: 0 1px 5px black;
+}
+@media (min-width: 768px) {
+  .landing .button {
+    width: 40%;
+    text-align: center;
+    margin: 25px 0;
+  }
+  .landing .button:hover {
+    background-color: var(--Soft-color);
+    color: white;
+  }
+}
+.landing .social-media {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .landing .social-media {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+  }
+}
+.landing .social-media i {
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 8px 20px;
+}
+@media (min-width: 768px) {
+  .landing i:hover {
+    background-color: var(--Soft-color);
+  }
+}
+footer {
+  margin-top: 50px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: hsl(300, 69%, 71%);
+}
