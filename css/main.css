@@ -12,7 +12,7 @@ body {
   background-size: cover;
   background-position: center;
   background-color: var(--Violet-color);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 @media (max-width: 767px) {
   body {
@@ -99,7 +99,9 @@ header .logo img {
     right: 50px;
   }
 }
-.landing .social-media i {
+.landing .social-media a {
+  text-decoration: none;
+  color: white;
   width: 35px;
   height: 35px;
   border: 1px solid white;
@@ -110,7 +112,7 @@ header .logo img {
   margin: 50px 8px 20px;
 }
 @media (min-width: 768px) {
-  .landing i:hover {
+  .landing a:hover {
     background-color: var(--Soft-color);
   }
 }
