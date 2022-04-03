@@ -41,7 +41,7 @@ header .logo img {
 }
 .landing .container {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.5fr 0.9fr;
   gap: 10px;
 }
 @media (max-width: 767px) {
@@ -65,7 +65,7 @@ header .logo img {
   }
 }
 .landing h2 {
-  font-size: 35px;
+  font-size: 40px;
 }
 .landing .button {
   display: block;
